@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Lightning Pro</title>
+	<link rel="icon" type="image/x-icon" href="images/fundo-claro-com-cor.png">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/templatemo-style.css">
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<!-- navigation -->
+	<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand"><img src="images/fundo-escuro-com-cor.png" class="img-logo"
+						alt="logo"></a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="portfolio.html">SPONSORS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- portfolio header section -->
+	<div id="portfolio-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12"></div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.slider {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.05);
+			padding: 20px 0;
+		}
+
+		.slide-track {
+			display: flex;
+			width: calc(250px * 24);
+			/* 12 logos repeated twice */
+		}
+
+		.slide-track.left {
+			animation: scrollLeft 40s linear infinite;
+		}
+
+		.slide-track.right {
+			animation: scrollRight 40s linear infinite;
+		}
+
+		.slide {
+			width: 250px;
+			height: 150px;
+			margin: 0 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #ff7e7e33;
+			border-radius: 8px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			flex-shrink: 0;
+		}
+
+		.slide img {
+			max-width: 80%;
+			max-height: 80%;
+			object-fit: contain;
+		}
+
+		@keyframes scrollLeft {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(-50%);
+			}
+		}
+
+		@keyframes scrollRight {
+			0% {
+				transform: translateX(-50%);
+			}
+
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+
+		a {
+			text-decoration: none;
+		}
+	</style>
+
+	<h1 style="color: #990000; margin-top: 80px;">Our Sponsors</h1>
+    <p style="text-align: center;">Curious about our sponsors? Don't worry, just click!</p>
+
+	<!-- Top slider (scrolls left) -->
+<div class="slider">
+  <div class="slide-track left">
+    <a href="https://www.jorcar.com/home/" class="slide"><img src="images/sponsor1.png" alt="Sponsor 1"></a>
+    <a href="https://www.martos.pt/news-category/noticias/?srsltid=AfmBOooAzgz8RvDPO7DlTkRNED69xuJPI3FRAMtRMOsOmAIJplq8ke59&v=35357b9c8fe4" class="slide"><img src="images/sponsor2.png" alt="Sponsor 2"></a>
+    <a href="https://www.motul.com/pt-PT" class="slide"><img src="images/sponsor3.png" alt="Sponsor 3"></a>
+    <a href="https://www.instagram.com/la.marck.pt/?__pwa=1" class="slide"><img src="images/sponsor4.png" alt="Sponsor 4"></a>
+    <a href="https://www.cm-mgrande.pt/" class="slide"><img src="images/sponsor5.png" alt="Sponsor 5"></a>
+    <a href="https://www.instagram.com/photo_go_pt/?__pwa=1" class="slide"><img src="images/sponsor6.png" alt="Sponsor 6"></a>
+    <a href="https://www.codi.pt/" class="slide"><img src="images/sponsor7.png" alt="Sponsor 7"></a>
+    <a href="https://www.centimfe.com/en-home.html" class="slide"><img src="images/sponsor8.png" alt="Sponsor 8"></a>
+    <a href="https://epamg.pt/" class="slide"><img src="images/sponsor9.png" alt="Sponsor 9"></a>
+    <a href="https://galhispo.com/" class="slide"><img src="images/sponsor10.png" alt="Sponsor 10"></a>
+    <a href="https://www.sintetikllub.com/" class="slide"><img src="images/sponsor11.png" alt="Sponsor 11"></a>
+    <a href="http://www.reclamit.pt/" class="slide"><img src="images/sponsor13.png" alt="Sponsor 13"></a>
+	<a href="https://www.google.com/maps/place/Xana/@39.7497856,-8.932851,40m/data=!3m1!1e3!4m6!3m5!1s0xd220e9ad596fdd7:0x4dea596988e3ebb3!8m2!3d39.7497278!4d-8.9328076!16s%2Fg%2F11clzty_g7?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D" class="slide"><img src="images/sponsor12.png" alt="Sponsor 12"></a>
+
+	<!-- Repeat -->
+    <a href="https://www.jorcar.com/home/" class="slide"><img src="images/sponsor1.png" alt="Sponsor 1"></a>
+    <a href="https://www.martos.pt/news-category/noticias/?srsltid=AfmBOooAzgz8RvDPO7DlTkRNED69xuJPI3FRAMtRMOsOmAIJplq8ke59&v=35357b9c8fe4" class="slide"><img src="images/sponsor2.png" alt="Sponsor 2"></a>
+    <a href="https://www.motul.com/pt-PT" class="slide"><img src="images/sponsor3.png" alt="Sponsor 3"></a>
+    <a href="https://www.instagram.com/la.marck.pt/?__pwa=1" class="slide"><img src="images/sponsor4.png" alt="Sponsor 4"></a>
+    <a href="https://www.cm-mgrande.pt/" class="slide"><img src="images/sponsor5.png" alt="Sponsor 5"></a>
+    <a href="https://www.instagram.com/photo_go_pt/?__pwa=1" class="slide"><img src="images/sponsor6.png" alt="Sponsor 6"></a>
+    <a href="https://www.codi.pt/" class="slide"><img src="images/sponsor7.png" alt="Sponsor 7"></a>
+    <a href="https://www.centimfe.com/en-home.html" class="slide"><img src="images/sponsor8.png" alt="Sponsor 8"></a>
+    <a href="https://epamg.pt/" class="slide"><img src="images/sponsor9.png" alt="Sponsor 9"></a>
+    <a href="https://galhispo.com/" class="slide"><img src="images/sponsor10.png" alt="Sponsor 10"></a>
+    <a href="https://www.sintetikllub.com/" class="slide"><img src="images/sponsor11.png" alt="Sponsor 11"></a>
+	<a href="http://www.reclamit.pt/" class="slide"><img src="images/sponsor13.png" alt="Sponsor 13"></a>
+	<a href="https://www.google.com/maps/place/Xana/@39.7497856,-8.932851,40m/data=!3m1!1e3!4m6!3m5!1s0xd220e9ad596fdd7:0x4dea596988e3ebb3!8m2!3d39.7497278!4d-8.9328076!16s%2Fg%2F11clzty_g7?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D" class="slide"><img src="images/sponsor12.png" alt="Sponsor 12"></a>
+  </div>
+</div>
+
+<!-- Bottom slider (scrolls right) -->
+<div class="slider">
+  <div class="slide-track right" style="margin-bottom: 50px;">
+    <a href="https://www.jorcar.com/home/" class="slide"><img src="images/sponsor1.png" alt="Sponsor 1"></a>
+    <a href="https://www.martos.pt/news-category/noticias/?srsltid=AfmBOooAzgz8RvDPO7DlTkRNED69xuJPI3FRAMtRMOsOmAIJplq8ke59&v=35357b9c8fe4" class="slide"><img src="images/sponsor2.png" alt="Sponsor 2"></a>
+    <a href="https://www.motul.com/pt-PT" class="slide"><img src="images/sponsor3.png" alt="Sponsor 3"></a>
+    <a href="https://www.instagram.com/la.marck.pt/?__pwa=1" class="slide"><img src="images/sponsor4.png" alt="Sponsor 4"></a>
+    <a href="https://www.cm-mgrande.pt/" class="slide"><img src="images/sponsor5.png" alt="Sponsor 5"></a>
+    <a href="https://www.instagram.com/photo_go_pt/?__pwa=1" class="slide"><img src="images/sponsor6.png" alt="Sponsor 6"></a>
+    <a href="https://www.codi.pt/" class="slide"><img src="images/sponsor7.png" alt="Sponsor 7"></a>
+    <a href="https://www.centimfe.com/en-home.html" class="slide"><img src="images/sponsor8.png" alt="Sponsor 8"></a>
+    <a href="https://epamg.pt/" class="slide"><img src="images/sponsor9.png" alt="Sponsor 9"></a>
+    <a href="https://galhispo.com/" class="slide"><img src="images/sponsor10.png" alt="Sponsor 10"></a>
+    <a href="https://www.sintetikllub.com/" class="slide"><img src="images/sponsor11.png" alt="Sponsor 11"></a>
+	<a href="http://www.reclamit.pt/" class="slide"><img src="images/sponsor13.png" alt="Sponsor 13"></a>
+    <a href="https://www.google.com/maps/place/Xana/@39.7497856,-8.932851,40m/data=!3m1!1e3!4m6!3m5!1s0xd220e9ad596fdd7:0x4dea596988e3ebb3!8m2!3d39.7497278!4d-8.9328076!16s%2Fg%2F11clzty_g7?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D" class="slide"><img src="images/sponsor12.png" alt="Sponsor 12"></a>
+	<!-- Repeat -->
+    <a href="https://www.jorcar.com/home/" class="slide"><img src="images/sponsor1.png" alt="Sponsor 1"></a>
+    <a href="https://www.martos.pt/news-category/noticias/?srsltid=AfmBOooAzgz8RvDPO7DlTkRNED69xuJPI3FRAMtRMOsOmAIJplq8ke59&v=35357b9c8fe4" class="slide"><img src="images/sponsor2.png" alt="Sponsor 2"></a>
+    <a href="https://www.motul.com/pt-PT" class="slide"><img src="images/sponsor3.png" alt="Sponsor 3"></a>
+    <a href="https://www.instagram.com/la.marck.pt/?__pwa=1" class="slide"><img src="images/sponsor4.png" alt="Sponsor 4"></a>
+    <a href="https://www.cm-mgrande.pt/" class="slide"><img src="images/sponsor5.png" alt="Sponsor 5"></a>
+    <a href="https://www.instagram.com/photo_go_pt/?__pwa=1" class="slide"><img src="images/sponsor6.png" alt="Sponsor 6"></a>
+    <a href="https://www.codi.pt/" class="slide"><img src="images/sponsor7.png" alt="Sponsor 7"></a>
+    <a href="https://www.centimfe.com/en-home.html" class="slide"><img src="images/sponsor8.png" alt="Sponsor 8"></a>
+    <a href="https://epamg.pt/" class="slide"><img src="images/sponsor9.png" alt="Sponsor 9"></a>
+    <a href="https://galhispo.com/" class="slide"><img src="images/sponsor10.png" alt="Sponsor 10"></a>
+    <a href="https://www.sintetikllub.com/" class="slide"><img src="images/sponsor11.png" alt="Sponsor 11"></a>
+	<a href="http://www.reclamit.pt/" class="slide"><img src="images/sponsor13.png" alt="Sponsor 13"></a>
+    <a href="https://www.google.com/maps/place/Xana/@39.7497856,-8.932851,40m/data=!3m1!1e3!4m6!3m5!1s0xd220e9ad596fdd7:0x4dea596988e3ebb3!8m2!3d39.7497278!4d-8.9328076!16s%2Fg%2F11clzty_g7?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D" class="slide"><img src="images/sponsor12.png" alt="Sponsor 12"></a> 
+  </div>
+</div>
+
+	<!-- 
+	 portfolio section 
+	<div id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-2 col-md-8 col-sm-12">
+					<h1 style="margin-top: 0px;text-align: center;color: #990000;">Our Sponsors</h1>
+					<p></p>
+				</div>
+				<a href="images/LogoBanner.png" data-lightbox-gallery="portfolio-gallery"><img
+						src="images/LogoBanner.png" alt="portfolio img"><a>
+			</div>
+
+		</div>
+	</div>
+	</div> -->
+
+	<!-- footer section -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-2">
+					<p><i class="fa fa-phone"></i>+351 932 740 756</p>
+				</div>
+				<div class="col-md-4 col-sm-2">
+					<p><i class="fa fa-envelope-o"></i>lightningproteam@gmail.com</p>
+				</div>
+				<div class="col-md-4 col-sm-2">
+					<p><i class="fa fa-insta"></i>@lightning_pro_12</p>
+				</div>
+			</div>
+
+		</div>
+		</div>
+	</footer>
+
+	<!-- copyright section -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-5" style="align-content: center;">
+					<img src="images/BannerLogosFundo.png" />
+					<p style="text-align: center;">Lightning Pro - Adriana Gabriel - Onetel</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- javascript js -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
