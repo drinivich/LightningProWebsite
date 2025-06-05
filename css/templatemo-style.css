@@ -196,7 +196,7 @@ img {
 
 /* home section */
 #home {
-  background: url('../images/renderCima.jpg') no-repeat;
+  background: url('../images/renderCima.png') no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -256,7 +256,7 @@ img {
 
 /* about section */
 #about-header {
-  background: url('../images/renderCima.jpg') no-repeat;
+  background: url('../images/renderCima.png') no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -349,7 +349,7 @@ img {
 
 /* portfolio section */
 #portfolio-header {
-  background: url('../images/renderCima.jpg') no-repeat;
+  background: url('../images/renderCima.png') no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -390,7 +390,7 @@ img {
 
 /* CONTACTOS */
 #contact-header {
-  background: url('../images/renderCima.jpg') no-repeat;
+  background: url('../images/renderCima.png') no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 500px;
