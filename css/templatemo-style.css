@@ -548,6 +548,9 @@ footer a:hover {
   #contact h3 {
     padding-top: 20px;
   }
+  #contact{
+  text-align: left;
+}
 
   #contact .btn {
     margin-bottom: 20px;
@@ -717,6 +720,10 @@ footer .container > div {
   flex: 1 1 30%;
   margin-bottom: 10px;
 align-items: center;
+
+#contact{
+  text-align: left;
+}
 }
 }
 
