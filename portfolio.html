@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Lightning Pro</title>
-	<link rel="icon" type="image/x-icon" href="images/fundo-claro-com-cor.png">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lightning Pro</title>
+  <link rel="icon" type="image/x-icon" href="images/fundo-claro-com-cor.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- stylesheet css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/nivo-lightbox.css">
-	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
-	<link rel="stylesheet" href="css/templatemo-style.css">
-	<!-- google web font css -->
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- stylesheet css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/nivo-lightbox.css" />
+  <link rel="stylesheet" href="css/nivo_themes/default/default.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css" />
 
+  <!-- google web font css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <style>
+    /* Flex container for equal height columns on desktop */
+    #contact .row.equal-height {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Columns are flex children */
+    #contact .row.equal-height > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Make the map container fill full height of its column */
+    #map-container {
+      height: 100%; /* overridden by JS on desktop */
+    }
+
+    /* iframe fills container fully */
+    #map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(50, 0, 0, 0.2);
+      display: block;
+    }
+
+    /* On smaller screens, stack columns vertically and reset heights */
+    @media (max-width: 767px) {
+      #contact .row.equal-height {
+        display: block;
+      }
+
+      #map-container {
+        height: auto !important;
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
