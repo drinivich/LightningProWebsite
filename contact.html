@@ -68,7 +68,7 @@
 					</p>
 				</div>
 				<div class="col-md-8 col-sm-8 mt30">
-					<form action="https://formcarry.com/s/v7u9za605bY" method="POST">
+					<form id="contactForm">
 						<div class="row">
 							<!-- Left Column (Email + Name) -->
 							<div class="col-md-6 col-sm-6">
@@ -156,6 +156,25 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/nivo-lightbox.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script>
+		document.getElementById('contactForm').addEventListener('submit', function (e) {
+			e.preventDefault();
+
+			const formData = new FormData(this);
+
+			fetch('https://form-backend-zxrj.onrender.com/submit', {
+				method: 'POST',
+				body: formData
+			}).then(response => {
+				if (response.ok) {
+					window.location.href = '/thankyou.html';
+				} else {
+					alert('Erro ao enviar a mensagem, tenta novamente.');
+				}
+			}).catch(() => alert('Erro ao enviar a mensagem, tenta novamente.'));
+		});
+	</script>
 
 </body>
 
