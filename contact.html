@@ -4,8 +4,6 @@
 <head>
 	<title>Lightning Pro</title>
 	<link rel="icon" type="image/x-icon" href="images/fundo-claro-com-cor.png">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +44,6 @@
 		</div>
 	</div>
 
-
 	<!-- contact header section -->
 	<div id="contact-header">
 		<div class="container">
@@ -65,7 +62,6 @@
 					<p style="text-align: center;">If you have anything you want to say or ask we are more than glad
 						to hear you,</p>
 					<p style="text-align: center;">don't be shy, feel free to contact us!</p>
-					</p>
 				</div>
 				<div class="col-md-8 col-sm-8 mt30">
 					<form id="contactForm">
@@ -136,7 +132,6 @@
 			</div>
 
 		</div>
-		</div>
 	</footer>
 
 	<!-- copyright section -->
@@ -161,25 +156,27 @@
 		document.getElementById('contactForm').addEventListener('submit', function (e) {
 			e.preventDefault();
 
-			const data = {
-				name: this.name.value,
-				email: this.email.value,
-				message: this.message.value
-			};
+			const formData = new FormData(this);
+
+			// Convert FormData to JSON
+			const data = {};
+			formData.forEach((value, key) => {
+				data[key] = value;
+			});
 
 			fetch('https://form-backend-zxrj.onrender.com/submit', {
 				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
+				headers: { 'Content-Type': 'application/json' },
 				body: JSON.stringify(data)
-			}).then(response => {
-				if (response.ok) {
-					window.location.href = 'thankyou.html';
-				} else {
-					alert('Erro ao enviar a mensagem, tenta novamente.');
-				}
-			}).catch(() => alert('Erro ao enviar a mensagem, tenta novamente.'));
+			})
+				.then(response => {
+					if (response.ok) {
+						window.location.href = 'https://drinivich.github.io/LightningProWebsite/thankyou.html';
+					} else {
+						alert('Erro ao enviar a mensagem, tenta novamente.');
+					}
+				})
+				.catch(() => alert('Erro ao enviar a mensagem, tenta novamente.'));
 		});
 	</script>
 
