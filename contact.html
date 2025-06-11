@@ -53,10 +53,10 @@
 		</div>
 	</div>
 
-<div class="row" style="margin-top: 40px; display: flex; align-items: stretch;">
+<div class="row d-flex flex-wrap" style="margin-top: 40px;">
 	<!-- Left Column: Contact Form -->
-	<div class="col-md-6 col-sm-12" style="display: flex; flex-direction: column;">
-		<form id="contactForm" style="flex: 1;">
+	<div class="col-md-6 col-12 d-flex flex-column">
+		<form id="contactForm" class="d-flex flex-column h-100">
 			<div class="form-group">
 				<label>Your email:</label>
 				<input type="email" name="email" required
@@ -79,10 +79,10 @@
 		</form>
 	</div>
 
-	<!-- Right Column: Map with same height -->
-	<div class="col-md-6 col-sm-12" style="display: flex; flex-direction: column;">
+	<!-- Right Column: Map with matching height on desktop -->
+	<div class="col-md-6 col-12 d-flex flex-column mt-4 mt-md-0">
 		<h3 style="color: #fff; margin-bottom: 16px;">Our location:</h3>
-		<div style="flex: 1;">
+		<div style="flex: 1; height: 100%;">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d306.2687831836127!2d-8.933820185213235!3d39.74981751224132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd220e9ad853191f%3A0xd83da78ef8752ebe!2sEscola%20Profissional%20e%20Art%C3%ADstica%20da%20Marinha%20Grande!5e1!3m2!1spt-PT!2spt!4v1718101400000!5m2!1spt-PT!2spt"
 				width="100%" height="100%"
@@ -94,6 +94,7 @@
 		</div>
 	</div>
 </div>
+
 
 	<!-- contact section 
 	<div id="contact">
