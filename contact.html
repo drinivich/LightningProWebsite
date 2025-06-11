@@ -3,24 +3,63 @@
 
 <head>
   <title>Lightning Pro</title>
-  <link rel="icon" type="image/x-icon" href="images/fundo-claro-com-cor.png">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/fundo-claro-com-cor.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- stylesheet css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/nivo-lightbox.css">
-  <link rel="stylesheet" href="css/nivo_themes/default/default.css">
-  <link rel="stylesheet" href="css/templatemo-style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/nivo-lightbox.css" />
+  <link rel="stylesheet" href="css/nivo_themes/default/default.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css" />
 
   <!-- google web font css -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <style>
+    /* Flex container for equal height columns on desktop */
+    #contact .row.equal-height {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Columns are flex children */
+    #contact .row.equal-height > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Make the map container fill full height of its column */
+    #map-container {
+      height: 100%; /* overridden by JS on desktop */
+    }
+
+    /* iframe fills container fully */
+    #map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(50, 0, 0, 0.2);
+      display: block;
+    }
+
+    /* On smaller screens, stack columns vertically and reset heights */
+    @media (max-width: 767px) {
+      #contact .row.equal-height {
+        display: block;
+      }
+
+      #map-container {
+        height: auto !important;
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- navigation -->
   <div class="container">
     <div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -30,8 +69,7 @@
           <span class="icon icon-bar"></span>
           <span class="icon icon-bar"></span>
         </button>
-        <a href="index.html" class="navbar-brand"><img src="images/fundo-escuro-com-cor.png" class="img-logo"
-            alt="logo"></a>
+        <a href="index.html" class="navbar-brand"><img src="images/fundo-escuro-com-cor.png" class="img-logo" alt="logo" /></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -59,25 +97,27 @@
       <div class="row">
         <div class="col-md-offset-2 col-md-8 col-sm-12">
           <h1 style="text-align: center; color: #990000;">get in touch</h1>
-          <p style="text-align: center;">If you have anything you want to say or ask we are more than glad to hear you,</p>
+          <p style="text-align: center;">
+            If you have anything you want to say or ask we are more than glad to hear you,
+          </p>
           <p style="text-align: center;">don't be shy, feel free to contact us!</p>
         </div>
       </div>
 
       <!-- Contact + Map Row -->
-      <div class="row d-flex flex-wrap" style="margin-top: 40px;">
+      <div class="row equal-height" style="margin-top: 40px;">
         <!-- Contact Form -->
-        <div class="col-md-6 col-12 d-flex flex-column">
+        <div class="col-md-6 col-12">
           <form id="contactForm" class="d-flex flex-column h-100">
             <div class="form-group">
               <label>Your email:</label>
               <input type="email" name="email" required
-                style="background: transparent; border: 2px solid #fff; border-radius: 0px; box-shadow: none; color: #fff; padding: 12px 18px; font-size: 13px; font-weight: bold; transition: all 0.4s ease-in; width: 100%;">
+                style="background: transparent; border: 2px solid #fff; border-radius: 0px; box-shadow: none; color: #fff; padding: 12px 18px; font-size: 13px; font-weight: bold; transition: all 0.4s ease-in; width: 100%;" />
             </div>
             <div class="form-group">
               <label>Your name:</label>
               <input type="text" name="name" required
-                style="background: transparent; border: 2px solid #fff; border-radius: 0px; box-shadow: none; color: #fff; padding: 12px 18px; font-size: 13px; font-weight: bold; transition: all 0.4s ease-in; width: 100%;">
+                style="background: transparent; border: 2px solid #fff; border-radius: 0px; box-shadow: none; color: #fff; padding: 12px 18px; font-size: 13px; font-weight: bold; transition: all 0.4s ease-in; width: 100%;" />
             </div>
             <div class="form-group">
               <label>Your message:</label>
@@ -92,18 +132,11 @@
         </div>
 
         <!-- Map Section -->
-        <div class="col-md-6 col-12 d-flex flex-column mt-4 mt-md-0">
+        <div class="col-md-6 col-12 d-flex flex-column" id="map-container">
           <h3 style="color: #fff; margin-bottom: 16px;">Our location:</h3>
-          <div style="flex: 1; height: 100%;">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d306.2687831836127!2d-8.933820185213235!3d39.74981751224132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd220e9ad853191f%3A0xd83da78ef8752ebe!2sEscola%20Profissional%20e%20Art%C3%ADstica%20da%20Marinha%20Grande!5e1!3m2!1spt-PT!2spt!4v1718101400000!5m2!1spt-PT!2spt"
-              width="100%" height="100%"
-              style="border:0; border-radius: 16px; box-shadow: 0 4px 16px rgba(50, 0, 0, 0.2); min-height: 100%;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d306.2687831836127!2d-8.933820185213235!3d39.74981751224132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd220e9ad853191f%3A0xd83da78ef8752ebe!2sEscola%20Profissional%20e%20Art%C3%ADstica%20da%20Marinha%20Grande!5e1!3m2!1spt-PT!2spt!4v1718101400000!5m2!1spt-PT!2spt"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
@@ -145,6 +178,24 @@
   <script src="js/custom.js"></script>
 
   <script>
+    // Sync map height to contact form height on desktop
+    function syncHeights() {
+      const formCol = document.querySelector('#contactForm').parentElement;
+      const mapCol = document.getElementById('map-container');
+      const isDesktop = window.innerWidth >= 768;
+
+      if (isDesktop) {
+        const formHeight = formCol.getBoundingClientRect().height;
+        mapCol.style.height = formHeight + 'px';
+      } else {
+        mapCol.style.height = 'auto'; // reset on mobile
+      }
+    }
+
+    window.addEventListener('load', syncHeights);
+    window.addEventListener('resize', syncHeights);
+
+    // Contact form submit handler (your existing code)
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -170,7 +221,6 @@
         .catch(() => alert('Erro ao enviar a mensagem, tenta novamente.'));
     });
   </script>
-
 </body>
 
 </html>
